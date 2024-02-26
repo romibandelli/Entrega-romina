@@ -3,6 +3,7 @@ body {
   margin: 8px;
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 768px) {
   body {
     margin: 0;
@@ -13,10 +14,25 @@ body {
     padding: 0;
   }
   .destacados_ejemplo {
+=======
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media screen and (max-width: 768px) {
+  .destacados_ejemplo, main .destacados_ejemplo p {
+>>>>>>> 996e089 (sass)
     margin: 10px;
   }
   nav {
     flex-direction: column;
+<<<<<<< HEAD
     align-items: center;
   }
   nav .logo {
@@ -36,6 +52,26 @@ body {
     width: 100% !important;
     text-align: center;
   }
+=======
+  }
+  .logo-container {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .logo {
+    width: 80px;
+  }
+  h1 {
+    font-size: 18px;
+  }
+  ul {
+    width: 100%;
+    text-align: center;
+  }
+  .carrito {
+    margin-top: 10px;
+  }
+>>>>>>> 996e089 (sass)
   .mapa-envios iframe {
     width: 100%;
     padding-top: 10px;
@@ -44,6 +80,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 0.1fr 1fr 1fr 0.2fr;
     grid-template-areas: "titulo ." "producto_1 producto_2" "producto_3 producto_4";
+<<<<<<< HEAD
   }
   #grid_productos .producto_1 {
     font-weight: 700;
@@ -70,15 +107,40 @@ body {
 }
 /*seccion envio */
 /* seccion carrito */
+=======
+    margin: 0;
+  }
+  .producto_1,
+  .producto_2,
+  .producto_3,
+  .producto_4 {
+    font-weight: 700;
+    padding: 10px 10px 2px 10px;
+  }
+  .producto_5,
+  .producto_6 {
+    display: none;
+  }
+}
+>>>>>>> 996e089 (sass)
 @media only screen and (max-width: 576px) {
   ul {
     flex-direction: column;
   }
+<<<<<<< HEAD
   .nosotras_descripcion img {
     width: 150px;
     margin: 0 auto;
     display: block;
     padding-bottom: 20px;
+=======
+  body, html {
+    margin: 0;
+    padding: 0;
+  }
+  .nosotras_descripcion img {
+    width: 150px;
+>>>>>>> 996e089 (sass)
   }
   #grid_productos {
     grid-template-columns: repeat(1, 1fr);
@@ -86,11 +148,16 @@ body {
     grid-template-areas: "titulo" "producto_1" "producto_2" "producto_3" "producto_4";
     margin: 0;
   }
+<<<<<<< HEAD
   #grid_productos .grid_busqueda {
+=======
+  .grid_busqueda {
+>>>>>>> 996e089 (sass)
     grid-area: titulo;
     align-items: center;
     padding: 10px;
   }
+<<<<<<< HEAD
   #grid_productos .grid_busqueda label {
     font-weight: bold;
     font-size: 14px;
@@ -99,6 +166,8 @@ body {
   .section-envio {
     display: flex;
   }
+=======
+>>>>>>> 996e089 (sass)
   .section-envio h2 {
     text-align: center;
   }
@@ -143,6 +212,7 @@ body {
     grid-area: txt7;
   }
 }
+<<<<<<< HEAD
 * {
   padding: 0;
   margin: 0;
@@ -163,12 +233,25 @@ main {
 }
 
 .selection-destacados {
+=======
+main {
+  padding: 20px;
+}
+main .productos-destacados {
+  text-align: center;
+}
+main .selection-destacados {
+>>>>>>> 996e089 (sass)
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
+<<<<<<< HEAD
 
 .destacados_ejemplo {
+=======
+main .destacados_ejemplo, main .destacados_ejemplo p {
+>>>>>>> 996e089 (sass)
   margin: 15px;
   padding: 15px;
   border: 3px solid #f6d5e4;
@@ -176,17 +259,30 @@ main {
   position: relative;
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
   align-items: center;
 }
 .destacados_ejemplo img {
+=======
+  justify-content: center;
+}
+main .destacados_ejemplo img {
+>>>>>>> 996e089 (sass)
   width: 100%;
   padding-bottom: 10px;
   border-radius: 50%;
 }
+<<<<<<< HEAD
 .destacados_ejemplo p {
   flex-grow: 1;
 }
 .destacados_ejemplo .sale {
+=======
+main .destacados_ejemplo p {
+  flex-grow: 1;
+}
+main .destacados_ejemplo .sale {
+>>>>>>> 996e089 (sass)
   background-color: rgb(184, 83, 154);
   padding: 3px;
   color: white;
@@ -197,6 +293,7 @@ main {
   border-radius: 20%;
   box-shadow: 1px 1px 1px black;
 }
+<<<<<<< HEAD
 
 /* estilos copy */
 p {
@@ -206,6 +303,9 @@ p {
 }
 
 .precio {
+=======
+main .precio {
+>>>>>>> 996e089 (sass)
   color: #e83e8c;
   font-weight: bold;
   font-size: 16px;
@@ -229,6 +329,15 @@ h3 {
   padding-bottom: 10px;
 }
 
+<<<<<<< HEAD
+=======
+p {
+  font-size: 12px;
+  color: black;
+  display: block;
+}
+
+>>>>>>> 996e089 (sass)
 header {
   background-color: #fff0f7;
   z-index: 100;

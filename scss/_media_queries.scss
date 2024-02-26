@@ -1,4 +1,5 @@
 @media screen and (max-width: 768px) {
+<<<<<<< HEAD
 
   body {
     margin: 0;
@@ -70,10 +71,60 @@
       padding: 10px 10px 2px 10px;
     }
 
+=======
+    .destacados_ejemplo {
+      margin: 10px;
+    }
+  
+    nav {
+      flex-direction: column; 
+    }
+  
+    .logo-container {
+      text-align: center; 
+      margin-bottom: 10px; 
+    }
+  
+    .logo {
+      width: 80px;
+    }
+  
+    h1 {
+      font-size: 18px; 
+    } 
+  
+    ul {
+      width: 100%; 
+      text-align: center; 
+    }
+  
+    .carrito {
+      margin-top: 10px; 
+    }
+  
+    .mapa-envios iframe {
+      width: 100%;
+      padding-top: 10px;
+    }
+  
+    #grid_productos {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 0.1fr 1fr 1fr 0.2fr;
+      grid-template-areas: 
+        "titulo ."
+        "producto_1 producto_2"
+        "producto_3 producto_4";
+      margin: 0;
+}
+    .producto_1,
+    .producto_2,
+    .producto_3,
+>>>>>>> 996e089 (sass)
     .producto_4 {
       font-weight: 700;
       padding: 10px 10px 2px 10px;
     }
+<<<<<<< HEAD
 
     .producto_5 {
       display: none;
@@ -115,10 +166,47 @@
       "producto_4";
     margin: 0;
 
+=======
+  
+    .producto_5,
+    .producto_6 {
+      display: none;
+    }
+  }
+
+
+  @media only screen and (max-width: 576px) {
+    ul {
+      flex-direction: column;
+    }
+  
+    body, html {
+      margin: 0;
+      padding: 0;
+    }
+  
+    .nosotras_descripcion img {
+      width: 150px;
+    }
+  
+    #grid_productos {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: 0.1fr 1fr 1fr 1fr 0.2fr;
+      grid-template-areas: 
+        "titulo"
+        "producto_1"
+        "producto_2"
+        "producto_3"
+        "producto_4";
+      margin: 0;
+    }
+ 
+>>>>>>> 996e089 (sass)
     .grid_busqueda {
       grid-area: titulo;
       align-items: center;
       padding: 10px;
+<<<<<<< HEAD
 
       label {
         font-weight: bold;
@@ -196,3 +284,71 @@
     grid-area: txt7;
   }
 }
+=======
+    }
+  
+    .section-envio h2 {
+      text-align: center;
+    }
+  
+    .title_detalle {
+      padding-bottom: 10px;
+    }
+  
+    #grid_carrito {
+      grid-template-columns: repeat(1, 0.5fr);
+      grid-template-rows: repeat(8, 0.5fr);
+      grid-template-areas: 
+        "compra"
+        "txt1"
+        "txt2"
+        "txt3"
+        "txt4"
+        "txt5"
+        "txt6"
+        "txt7";
+    }
+  
+    .producto_pedido {
+      grid-area: compra;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .producto_nombre {
+      grid-area: txt1;
+  
+      h2 {
+        font-size: 18px;
+      }
+    }
+  
+    .producto_precio {
+      grid-area: txt2;
+    }
+  
+    .producto_cantidad {
+      grid-area: txt3;
+    }
+  
+    .producto_envio {
+      grid-area: txt4;
+  
+      h3 {
+        padding-top: 10px;
+      }
+    }
+  
+    .producto_pago {
+      grid-area: txt5;
+    }
+  
+    .producto_comentario {
+      grid-area: txt6;
+    }
+  
+    .producto_botones {
+      grid-area: txt7;
+    }
+  }
+>>>>>>> 996e089 (sass)
