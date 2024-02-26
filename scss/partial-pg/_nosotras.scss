@@ -1,0 +1,28 @@
+.nosotras {
+	text-align: center;
+}
+
+.selection-nosotras {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.nosotras_descripcion {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	h2 {
+		@extend .nosotras;
+	}
+	img {
+		width: 250px;
+		margin: 0 auto;
+		display: block;
+		padding-bottom: 20px;
+	}
+	p {
+		margin-bottom: 15px;
+	}
+}

@@ -1,0 +1,70 @@
+.section-envio {
+	display: flex;
+	justify-content: left;
+	flex-direction: column;
+	h2 {
+		padding-top: 20px;
+	}
+}
+.envio {
+	font-size: 12px;
+}
+.mapa-envios {
+	iframe {
+		width: 80%;
+		padding-top: 20px;
+	}
+}
+.title_detalle {
+	text-align: center;
+	padding-bottom: 20px;
+}
+#grid_carrito {
+	display: grid;
+	grid-template-columns: repeat(4, 0.5fr);
+	grid-template-rows: repeat(4, 00.5fr);
+	grid-template-areas: "compra txt1 txt2 txt3" "txt4 . . ." "txt5 . . . ""txt6 . . . ""txt7 . . . ";
+	gap: 10px;
+	margin: 0 auto 5px auto;
+	width: 95vw;
+	img {
+		width: 80%;
+		overflow: hidden;
+		border-radius: 50px;
+	}
+}
+.producto_nombre {
+	h2 {
+		font-size: 18px;
+	}
+	grid-area: txt1;
+}
+.producto_pedido {
+	grid-area: compra;
+}
+.producto_botones {
+	button {
+		background-color: $background-color_3;
+		padding: 3px 3px;
+		border-radius: 10%;
+	}
+	grid-area: txt7;
+}
+.producto_precio {
+	grid-area: txt2;
+}
+.producto_cantidad {
+	grid-area: txt3;
+}
+.producto_envio {
+	grid-area: txt4;
+	h3 {
+		padding-top: 20px;
+	}
+}
+.producto_pago {
+	grid-area: txt5;
+}
+.producto_comentario {
+	grid-area: txt6;
+}

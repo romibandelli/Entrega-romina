@@ -1,0 +1,100 @@
+#grid_productos {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 2fr 2fr 2fr;
+	grid-template-areas: "titulo producto_1 producto_2" "titulo producto_3 producto_4" "titulo producto_5 producto_6";
+	gap: 10px;
+	margin: 0 auto 25px auto;
+	width: 95vw;
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		align-self: center;
+		border-radius: 20px;
+	}
+	p {
+		font-size: 15px;
+		font-weight: bolder;
+	}
+	h2 {
+		font-size: 16px;
+		font-weight: lighter;
+		margin-bottom: 0px;
+		font-weight: normal;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+	}
+}
+.grid_busqueda {
+	grid-area: titulo;
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+	padding: 20px;
+	height: 100%;
+	label {
+		font-weight: bold;
+		font-size: 14px;
+		padding-right: 10px;
+	}
+	button {
+		background-color: $background-color_3;
+		padding: 0px 3px 0px 3px;
+		border-radius: 10%;
+	}
+}
+.producto_1 {
+	grid-area: producto_1;
+	text-align: center;
+	font-weight: 900;
+	font-size: 1.35rem;
+	padding: 25px 25px 2px 25px;
+	line-height: 2;
+	@include products (column, center)
+}
+.producto_2 {
+	grid-area: producto_2;
+	text-align: center;
+	font-weight: 900;
+	font-size: 1.35rem;
+	padding: 25px 25px 2px 25px;
+	line-height: 2;
+	@include products (column, center)
+}
+.producto_3 {
+	grid-area: producto_3;
+	text-align: center;
+	font-weight: 900;
+	font-size: 1.35rem;
+	padding: 25px 25px 2px 25px;
+	line-height: 2;
+	@include products (column, center)
+}
+.producto_4 {
+	grid-area: producto_4;
+	text-align: center;
+	font-weight: 900;
+	font-size: 1.35rem;
+	padding: 25px 25px 2px 25px;
+	line-height: 2;
+	@include products (column, center)
+}
+.producto_5 {
+	grid-area: producto_5;
+	text-align: center;
+	font-weight: 900;
+	font-size: 1.35rem;
+	padding: 25px 25px 2px 25px;
+	line-height: 2;
+	@include products (column, center)
+}
+.producto_6 {
+	grid-area: producto_6;
+	text-align: center;
+	font-weight: 900;
+	font-size: 1.35rem;
+	padding: 25px 25px 2px 25px;
+	line-height: 2;
+    @include products (column, center)
+}

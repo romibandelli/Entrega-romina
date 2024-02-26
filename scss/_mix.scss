@@ -1,0 +1,19 @@
+@mixin flex ($direccion, $jcontent, $align){
+    display: flex;
+    flex-direction: $direccion;
+    justify-content: $jcontent;
+    align-items: $align;
+}
+
+@mixin footer-logos ($direccion, $align) {
+    display: flex;
+    flex-direction: $direccion;
+    align-items: $align;
+
+}
+
+@mixin products ($direcion, $jcontent) {
+    display: flex;
+    flex-direction: $direcion;
+    justify-content: $jcontent;
+}
