@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/base.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <title>Microdesafio</title>
+</head>
+
+<body>
+
+    <header> <!-- Seccion 1 -->
+        <nav>
+            <a href="../index.html">
+                <img class="logo" src="../img/logo_marca.png" alt="Portal Mistico">
+            </a>
+            <h1>Portal Mistico</h1>
+            <ul>
+                <li class="menu"><a href="../index.html">Inicio</a></li>
+                <li class="menu"><a href="./nosotros.html">Nosotras</a></li>
+                <li class="menu"><strong><a href="./productos.html">Productos</a></strong></li>
+                <li class="menu"><a href="./envio.html">Envio</a></li>
+            </ul>
+            <a href="./carrito.html">
+                <img class="carrito" src="../img/carrito.png" alt="Pedido">
+            </a>
+        </nav>
+    </header>
+
+    <main> <!-- Seccion 2 -->
+        <section id="grid_productos">
+            <div class="grid_busqueda">
+                <form action="/buscar" method="GET">
+                    <label for="busqueda">Buscar</label>
+                    <input type="text" id="busqueda" name="q" placeholder="Ingrese su búsqueda">
+                    <button type="submit">Buscar</button>
+                </form>
+            </div> 
+
+            <div class="producto_1">
+                <img src="../img/palo_santo01.jpg" alt="Palo Santo">
+                <h2>Palo Santo</h2>
+                <p>$50</p>
+            </div>
+
+            <div class="producto_2">
+                <img src="../img/aceites.jpg" alt="Aceite esencial">
+                <h2>Aceites esenciales</h2>
+                <p>$95</p>
+            </div>
+
+            <div class="producto_3">
+                <img src="../img/pinza.jpg" alt="Pinza">
+                <h2>Pinza</h2>
+                <p>$95</p>
+            </div>
+
+            <div class="producto_4">
+                <img src="../img/vela.png" alt="Vela con soporte">
+                <h2>Vela con soporte</h2>
+                <p>$150</p>
+            </div>
+
+            
+            <div class="producto_5">
+                <img src="../img/ramillete.jpg" alt="Ramillete">
+                <h2>Ramillete</h2>
+                <p>$350</p>
+            </div>
+
+
+            <div class="producto_6">
+                <img src="../img/bombita.jpg" alt="Bombitas">
+                <h2>Bombitas</h2>
+                <p>$50</p>
+            </div>
+ 
+        </section>
+    </main>
+
+    <footer> <!-- Seccion 3 -->
+
+        <div class="footer_contacto">
+            <h3>Contacto</h3>
+            <p>12345678</p>
+            <p>mail@mail.com</p>
+        </div>
+        <div class="wpp">
+            <a href="" target="_blank">
+                <img src="../img/wpp_logo.png" alt="Whatsapp"></a>
+        </div>
+        <div class="footer_logo">
+            <a href="#home">
+                <img src="../img/logo_marca.png" alt="Logo Portal Mistico"></a>
+        </div>
+        <div class="footer_instagram">
+            <h3>Seguinos</h3>
+            <a href="https://instagram.com/" target="_blank">
+                <img src="../img/instagram_logo.png" alt="Instagram"></a>
+        </div>
+
+    </footer>
+</body>
+
+</html>
