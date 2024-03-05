@@ -3,39 +3,38 @@ body {
   margin: 8px;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-}
-
 @media screen and (max-width: 768px) {
-  .destacados_ejemplo, main .destacados_ejemplo p {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    margin: 0;
+    padding: 0;
+  }
+  .destacados_ejemplo {
     margin: 10px;
   }
   nav {
     flex-direction: column;
+    align-items: center;
   }
-  .logo-container {
+  nav .logo {
+    width: 80px !important;
+  }
+  nav .logo-container {
     text-align: center;
     margin-bottom: 10px;
   }
-  .logo {
-    width: 80px;
-  }
-  h1 {
+  nav h1 {
     font-size: 18px;
   }
-  ul {
-    width: 100%;
-    text-align: center;
-  }
-  .carrito {
+  nav .carrito {
     margin-top: 10px;
+  }
+  ul {
+    width: 100% !important;
+    text-align: center;
   }
   .mapa-envios iframe {
     width: 100%;
@@ -45,30 +44,41 @@ html {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 0.1fr 1fr 1fr 0.2fr;
     grid-template-areas: "titulo ." "producto_1 producto_2" "producto_3 producto_4";
-    margin: 0;
   }
-  .producto_1,
-  .producto_2,
-  .producto_3,
-  .producto_4 {
+  #grid_productos .producto_1 {
     font-weight: 700;
     padding: 10px 10px 2px 10px;
   }
-  .producto_5,
-  .producto_6 {
+  #grid_productos .producto_2 {
+    font-weight: 700;
+    padding: 10px 10px 2px 10px;
+  }
+  #grid_productos .producto_3 {
+    font-weight: 700;
+    padding: 10px 10px 2px 10px;
+  }
+  #grid_productos .producto_4 {
+    font-weight: 700;
+    padding: 10px 10px 2px 10px;
+  }
+  #grid_productos .producto_5 {
+    display: none;
+  }
+  #grid_productos .producto_6 {
     display: none;
   }
 }
+/*seccion envio */
+/* seccion carrito */
 @media only screen and (max-width: 576px) {
   ul {
     flex-direction: column;
   }
-  body, html {
-    margin: 0;
-    padding: 0;
-  }
   .nosotras_descripcion img {
     width: 150px;
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 20px;
   }
   #grid_productos {
     grid-template-columns: repeat(1, 1fr);
@@ -76,10 +86,18 @@ html {
     grid-template-areas: "titulo" "producto_1" "producto_2" "producto_3" "producto_4";
     margin: 0;
   }
-  .grid_busqueda {
+  #grid_productos .grid_busqueda {
     grid-area: titulo;
     align-items: center;
     padding: 10px;
+  }
+  #grid_productos .grid_busqueda label {
+    font-weight: bold;
+    font-size: 14px;
+    padding-right: 10px;
+  }
+  .section-envio {
+    display: flex;
   }
   .section-envio h2 {
     text-align: center;
@@ -125,18 +143,32 @@ html {
     grid-area: txt7;
   }
 }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 main {
   padding: 20px;
 }
-main .productos-destacados {
+
+/* productos destacados */
+.productos-destacados {
   text-align: center;
 }
-main .selection-destacados {
+
+.selection-destacados {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-main .destacados_ejemplo, main .destacados_ejemplo p {
+
+.destacados_ejemplo {
   margin: 15px;
   padding: 15px;
   border: 3px solid #f6d5e4;
@@ -144,17 +176,17 @@ main .destacados_ejemplo, main .destacados_ejemplo p {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
-main .destacados_ejemplo img {
+.destacados_ejemplo img {
   width: 100%;
   padding-bottom: 10px;
   border-radius: 50%;
 }
-main .destacados_ejemplo p {
+.destacados_ejemplo p {
   flex-grow: 1;
 }
-main .destacados_ejemplo .sale {
+.destacados_ejemplo .sale {
   background-color: rgb(184, 83, 154);
   padding: 3px;
   color: white;
@@ -165,7 +197,15 @@ main .destacados_ejemplo .sale {
   border-radius: 20%;
   box-shadow: 1px 1px 1px black;
 }
-main .precio {
+
+/* estilos copy */
+p {
+  font-size: 12px;
+  color: black;
+  display: block;
+}
+
+.precio {
   color: #e83e8c;
   font-weight: bold;
   font-size: 16px;
@@ -187,12 +227,6 @@ h3 {
   font-size: 16px;
   color: black;
   padding-bottom: 10px;
-}
-
-p {
-  font-size: 12px;
-  color: black;
-  display: block;
 }
 
 header {
