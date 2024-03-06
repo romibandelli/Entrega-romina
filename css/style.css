@@ -3,6 +3,40 @@ body {
   margin: 8px;
 }
 
+header {
+  background-color: #fff0f7;
+  z-index: 100;
+  top: 0;
+  position: sticky;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  box-align: center;
+  width: 60%;
+}
+header nav ul .menu a {
+  font-size: 16px;
+  color: #bc8b4a;
+  text-decoration: none;
+}
+header nav ul .menu a:hover {
+  color: #e83e8c;
+}
+header nav .logo {
+  width: 120px;
+}
+header nav .carrito {
+  width: 70px;
+}
+
 * {
   padding: 0;
   margin: 0;
