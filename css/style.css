@@ -4,7 +4,7 @@ body {
 }
 
 header {
-  background: radial-gradient(circle, #fad0c4, #ffd1ff);
+  background: radial-gradient(circle, #fdcbf1, #e6dee9);
   z-index: 100;
   top: 0;
   position: sticky;
