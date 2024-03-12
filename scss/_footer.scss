@@ -1,5 +1,5 @@
 footer {
-	background-color: $background-color_1;
+	background: radial-gradient(circle, #fad0c4, #ffd1ff);
 	@include flex(row , space-around, center);
 	flex-wrap: wrap;
 	margin-top: 20px;
