@@ -394,6 +394,14 @@ footer .footer_logo img {
 .producto_cantidad {
   grid-area: txt3;
 }
+.producto_cantidad .quantity {
+  width: 60px;
+  text-align: center;
+  border: 1px solid rgb(184, 83, 154);
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 14px;
+}
 
 .producto_envio {
   grid-area: txt4;

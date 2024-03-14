@@ -60,6 +60,15 @@
 }
 .producto_cantidad {
 	grid-area: txt3;
+	
+	.quantity {
+	width: 60px; // Ancho del recuadro de cantidad
+    text-align: center;
+    border: 1px solid $background-color_2;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px; 
+	}
 }
 .producto_envio {
 	grid-area: txt4;
