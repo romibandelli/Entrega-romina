@@ -51,6 +51,11 @@
 		background-color: $background-color_3;
 		padding: 0px 3px 0px 3px;
 		border-radius: 10%;
+		cursor: pointer; 
+		transition: background-color 0.3s; 
+	}
+	button:hover {
+		background-color: $background-color_2; 
 	}
 }
 .producto_1 {

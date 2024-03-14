@@ -217,6 +217,11 @@ footer .footer_logo img {
   background-color: #ead8e0;
   padding: 0px 3px 0px 3px;
   border-radius: 10%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.grid_busqueda button:hover {
+  background-color: rgb(184, 83, 154);
 }
 
 .producto_1 {
